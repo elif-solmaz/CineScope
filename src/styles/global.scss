@@ -1,0 +1,57 @@
+@import "./variables";
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: $background-color;
+  color: $text-color;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.header {
+  background: linear-gradient(135deg, $primary-color, $secondary-color);
+  color: $white;
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 4px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+  h1 {
+    margin: 0;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    img {
+      width: 40px;
+      height: auto;
+    }
+  }
+
+  p {
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: 300;
+  }
+}
+button {
+  background: $primary-color;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: darken($primary-color, 10%);
+}

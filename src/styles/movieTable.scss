@@ -1,0 +1,116 @@
+@import "./variables";
+
+.movie-table {
+  max-width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background: $white;
+  border-radius: 6px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: right;
+  max-width: 100%;
+  margin: 20px auto;
+
+  .icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+
+    .header-icon {
+      font-size: 50px;
+      color: white;
+    }
+  }
+
+  .title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end; 
+    flex-grow: 1;
+
+    h1 {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    p {
+      font-size: 14px;
+      opacity: 0.9;
+      margin: 5px 0 0;
+    }
+  }
+}
+
+
+.filter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  background: $white;
+  border-radius: 6px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 80%;
+
+  input,
+  select {
+    padding: 10px;
+    border: 1px solid $gray-light;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+
+    &:focus {
+      border-color: $primary-color;
+      box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+    }
+  }
+}
+
+.data-grid {
+  border: none;
+  font-size: 14px;
+
+  .MuiDataGrid-columnHeaders {
+    background-color: $primary-color !important;
+    color: $gray-dark !important;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+  .MuiDataGrid-columnHeaderTitle {
+    font-weight: bold;
+    color: $gray-dark !important;
+  }
+
+  .MuiDataGrid-row:nth-child(even) {
+    background-color: $background-color;
+  }
+
+  .MuiDataGrid-row:hover {
+    background-color: rgba(0, 123, 255, 0.1) !important;
+  }
+}
