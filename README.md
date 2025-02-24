@@ -61,7 +61,7 @@ CineScope uses **Redux Toolkit** for state management.
 
 - **\`moviesSlice.ts\`** → Manages the movie list and API calls.
 -  **\`moviesDetailSlice.ts\`** → Manages the movie details.  
-- **\`store.ts\`** → Combines all reducers and provides a global state to the app.  
+- **\`index.ts\`** → Combines all reducers and provides a global state to the app.  
 
 To inspect the Redux state, use [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd).  
 
